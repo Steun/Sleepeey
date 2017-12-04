@@ -1,0 +1,84 @@
+html {
+    font-family: sans-serif;
+    /* 1 */
+    letter-spacing: .43pt;
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: pink;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: auto;
+    letter-spacing: 3px;
+}
+
+main {
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 7vw;
+}
+
+.btn {
+    color: mediumpurple;
+    font-weight: bold;
+    background: pink;
+    border: 2px solid aqua;
+    letter-spacing: 5px;
+    padding: 20px 40px;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+li {
+    padding: 5px;
+    margin: 0;
+    display: block;
+    font-size: 17px;
+    box-sizing: border-box;
+}
