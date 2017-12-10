@@ -11,8 +11,8 @@ export default {
       givenTime: '09:30',
       bedtimes: [],
       waketimes: [],
-      pressed: false,
-      mode: ''
+      mode: '',
+      timeTitle: ''
     }
   },
   computed: {
@@ -30,37 +30,47 @@ export default {
       }
     },
 
+    cleanTimes () {
+      this.waketimes = []
+      this.bedtimes = []
+      this.timeTitle = ''
+    },
+
     calculateWakeTime () {
       // reset
       this.mode = 'waketime'
-      this.waketimes = []
+      this.cleanTimes()
 
       let now = new Date()
       for (let i = 0; i < this.cycleCount; i++) {
         now.setHours(now.getHours() + this.sleepCycleHours)
         now.setMinutes(now.getMinutes() + this.sleepCycleMinutes)
         this.waketimes.push({ id: i, date: now, value: this.prettyHour(now) })
-        this.pressed = true
       }
+      this.timeTitle = 'You should try to wake up at'
     },
 
-    calculateBedTime (time) {
-      console.log(time)
+    calculateBedTime () {
       // reset
-      this.mode = 'bedtime'
-      this.bedtimes = []
+      this.cleanTimes()
+      if (this.givenTime === '') return
 
       // convert time to date object
       let t = new Date()
-      t.setHours(time.split(':')[0], time.split(':')[1])
+      t.setHours(this.givenTime.split(':')[0], this.givenTime.split(':')[1])
 
       for (let i = 0; i < this.cycleCount; i++) {
         t.setHours(t.getHours() - this.sleepCycleHours)
         t.setMinutes(t.getMinutes() - this.sleepCycleMinutes)
         if (i === 0) t.setMinutes(t.getMinutes() - this.fallAsleepTime)
         this.bedtimes.unshift({ id: i, date: t, value: this.prettyHour(t) })
-        this.pressed = true
       }
+      this.timeTitle = 'You should try to go to sleep at'
+    },
+
+    openBedTimeBar () {
+      this.cleanTimes()
+      this.mode = 'bedtime'
     }
   }
 }
