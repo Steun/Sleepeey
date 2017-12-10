@@ -11,6 +11,9 @@
       <figure class="logo-container"><img src="./assets/logo.svg" alt="Sleepeey logo" class="logo"></figure>
       <span class="moon"></span>
       <section class="content">
+
+        <h1 class="title" v-if="mode === ''">Find your perfect bed or wake time, using sleepcycles.</h1>
+
         <div class="times-container">
 
           <div class="bedtime" v-if="mode === 'bedtime'">
@@ -29,7 +32,7 @@
         </div>
       </section>
       <section class="bottom-bar">
-        <div class="time-select">
+        <div class="time-select"  v-if="mode === 'bedtime'">
           <h5>When do you have to wake up?</h5>
           <input type="time" class="time-input" name="waketime" v-model="givenTime">
         </div>
@@ -39,27 +42,6 @@
         </div>
       </section>
     </main>
-
-    <!-- <main>
-      <input type="time" v-model="givenTime">
-      <button @click="calculateBedTime(givenTime)" class="btn">SLEEP</button>
-      <button @click="calculateWakeTime()" class="btn">WAKE</button>
-
-      <div class="container bedtime" v-if="mode === 'bedtime'">
-        <span v-if="pressed">Go to bed at:</span>
-        <ul class="list">
-          <li class="item" v-for="time in bedtimes" v-bind:key="time.id"><p>{{time.value}}</p></li>
-        </ul>
-      </div>
-
-      <div class="container waketime" v-if="mode ===  'waketime'">
-        <span v-if="pressed">wake up at:</span>
-        <ul class="list">
-          <li class="item" v-for="time in waketimes" v-bind:key="time.id"><p>{{time.value}}</p></li>
-        </ul>
-      </div>
-
-    </main> -->
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 $black: #000;
 $white: #fff;
-$night-blue: #1E1F3D;
-$dawn-blue: #323557;
-$bg-blue: #212862;
+$night-blue: rgb(18, 18, 32);
+$dawn-blue: #191b2C;
+$bg-blue: #14183C;
 $pink: #D735B3;
 $purple: #9C26CE;
 $violet: #7356E4;
@@ -55,6 +55,10 @@ summary {
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 html,
 body {
     padding: 0;
@@ -79,12 +83,12 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $white;
-    background:$black linear-gradient(-180deg, $bg-blue 0%, $black 40%, $black 100%);
+    background: $black linear-gradient($bg-blue 0%, $black 70%, $black 100%);
+    background-size: 100%;
     height: 100%;
     width: 100%;
     position: relative;
     box-sizing: border-box;
-    letter-spacing: .8px;
 
     .backdrop {
 
@@ -99,6 +103,8 @@ body {
       .stars {
         background-image: url("./assets/stars.svg");
         background-repeat: repeat-x;
+        max-height: 50%;
+        background-position: top center;
       }
 
       .cloud {
@@ -131,7 +137,7 @@ body {
 
     .moon {
       @extend %absolute;
-      background-image: url("./assets/moon.png");
+      background-image: url("./assets/moon.svg");
       pointer-events: none;
       background-position: top center;
       background-size: contain;
@@ -139,18 +145,31 @@ body {
       height: 140px;
       width: 140px;
       right: 1vw;
-      top: 2vw;
       left: auto;
     }
 
     .content {
       display: block;
       height: 100%;
-      padding: 6vh 3vw 0;
+      padding: 6vh 0 0;
       text-align: center;
+
+      .title {
+        $title-width: 270px;
+
+        font-weight: normal;
+        text-align: left;
+        font-size: 1.7em;
+        max-width: $title-width;
+        margin: 0 auto;
+        position: absolute;
+        top: 35vh;
+        left: calc(50% - #{$title-width / 2});
+      }
 
       h3 {
         color: $gray-blue;
+        font-weight: normal;
       }
 
       .times-container {
@@ -161,10 +180,18 @@ body {
           padding: 0;
 
           .item {
-            color: $blue;
+            $time-colors:#D735B3,#9C26CE,#7356E4,#666CC9,#646697, #494b72;
             display: block;
             font-size: 4vh;
             padding: 5px 0;
+            color: nth($time-colors, 6);
+
+
+            @for $i from 1 through 6 {
+              &:nth-child(#{$i}) {
+                color: nth($time-colors, $i);
+              }
+            }
           }
         }
       }
@@ -175,7 +202,15 @@ body {
       bottom: 0;
       left: 0;
       width: 100%;
-      padding: 0 5vw 5vw;
+      padding: 0 15vw 15vw;
+
+      @media screen and (min-width: 721px)  {
+        padding: 0 5vw 5vw;
+
+        .time-select h5 {
+          text-align: center;
+        }
+      }
     }
 
     .time-select {
@@ -184,6 +219,13 @@ body {
       text-align: center;
       padding: 3vw;
       border-bottom: 1px solid $black;
+
+      h5 {
+        text-align: left;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0 3vw 3vw;
+      }
     }
 
     .buttons {
@@ -200,6 +242,10 @@ body {
       }
     }
 
+    .hidden {
+      opacity: 0;
+    }
+
     .btn {
       padding: 15px 45px;
       background: $night-blue;
@@ -209,6 +255,8 @@ body {
       margin: 0;
       cursor: pointer;
       outline: none;
+      font-weight: normal;
+      border-radius: 0;
       transition: background ease .2s;
 
       &:hover,
@@ -224,7 +272,8 @@ body {
       padding: 10px 15px;
       text-align: center;
       width: 100%;
-      font-weight: bold;
+      font-weight: normal;
+      font-size: 1.2em;
       color: $white;
       border: 0;
       outline: 0;
