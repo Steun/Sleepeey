@@ -1,8 +1,10 @@
+[![Sleepeey](https://i.imgur.com/mKLhzsq.png)](https://sleepeey-187920.firebaseapp.com/) 
 # Sleepeey
+Find your perfect bed or wake time, using sleepcycles.
+A good night's sleep consists of 5-6 complete cycles. Wake up refreshed and full of energy.
 
-> When should I sleep?
-
-## Build Setup
+### Build Setup
+This application is built using Vue.js
 
 ``` bash
 # install dependencies
@@ -26,5 +28,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
