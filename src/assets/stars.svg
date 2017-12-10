@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="298px" height="600px" viewBox="0 0 298 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>sky</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Portrait" transform="translate(-20.000000, -5.000000)" fill="#FFFFFF">
+            <g id="sky" transform="translate(20.000000, 4.000000)">
+                <circle id="Oval" opacity="0.87" transform="translate(294.949262, 177.246347) scale(-1, -1) rotate(-181.000000) translate(-294.949262, -177.246347) " cx="294.949262" cy="177.246347" r="2.5"></circle>
+                <circle id="Oval" opacity="0.99" transform="translate(231.533471, 310.924789) rotate(-78.000000) translate(-231.533471, -310.924789) " cx="231.533471" cy="310.924789" r="2.5"></circle>
+                <circle id="Oval" opacity="0.93" transform="translate(254.632296, 201.989237) scale(-1, 1) rotate(-49.000000) translate(-254.632296, -201.989237) " cx="254.632296" cy="201.989237" r="2"></circle>
+                <circle id="Oval" opacity="0.98" transform="translate(250.597910, 3.316687) scale(-1, -1) rotate(-304.000000) translate(-250.597910, -3.316687) " cx="250.59791" cy="3.31668739" r="2"></circle>
+                <circle id="Oval" opacity="0.81" transform="translate(200.914940, 598.303758) rotate(-80.000000) translate(-200.914940, -598.303758) " cx="200.91494" cy="598.303758" r="2.5"></circle>
+                <circle id="Oval" opacity="0.83" transform="translate(148.920100, 376.066345) scale(-1, 1) rotate(-40.000000) translate(-148.920100, -376.066345) " cx="148.9201" cy="376.066345" r="2.5"></circle>
+                <circle id="Oval" opacity="0.82" transform="translate(138.039875, 204.493955) rotate(-277.000000) translate(-138.039875, -204.493955) " cx="138.039875" cy="204.493955" r="2.5"></circle>
+                <circle id="Oval" opacity="0.93" transform="translate(181.569702, 126.153280) scale(-1, 1) rotate(-319.000000) translate(-181.569702, -126.153280) " cx="181.569702" cy="126.15328" r="1.5"></circle>
+                <circle id="Oval" opacity="0.73" transform="translate(36.820607, 497.943700) scale(-1, -1) rotate(-87.000000) translate(-36.820607, -497.943700) " cx="36.8206068" cy="497.9437" r="2"></circle>
+                <circle id="Oval" opacity="0.87" transform="translate(3.100175, 148.721785) rotate(-168.000000) translate(-3.100175, -148.721785) " cx="3.10017477" cy="148.721785" r="2.5"></circle>
+                <circle id="Oval" opacity="0.76" transform="translate(33.188385, 289.992953) scale(-1, -1) rotate(-309.000000) translate(-33.188385, -289.992953) " cx="33.1883848" cy="289.992953" r="2"></circle>
+                <circle id="Oval" opacity="0.83" transform="translate(48.755376, 67.252302) rotate(-130.000000) translate(-48.755376, -67.252302) " cx="48.755376" cy="67.2523022" r="2"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="218px" height="61px" viewBox="0 0 218 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="1.77176339%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.123612998" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="86.2224968%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Portrait" transform="translate(0.000000, -45.000000)" fill="url(#linearGradient-1)">
+            <path d="M-15.5349438,89.0706518 C-15.5349438,89.0706518 -11.7429468,47.4915584 21.9455222,45.1253931 C55.6339912,42.7592279 60.259001,74.5210354 77.4609711,86.2547619 C94.6629411,97.9884883 122.188137,99.0122898 141.848262,83.4644245 C161.508386,67.9165591 176.753032,66.2471229 199.632776,84.3689844 C222.512521,102.490846 218.88406,115.951924 218.88406,115.951924 L-16,113.657306 L-15.5349438,89.0706518 Z" id="cloud"></path>
+        </g>
+    </g>
+</svg>
